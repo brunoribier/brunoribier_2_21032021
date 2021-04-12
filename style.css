@@ -1,0 +1,591 @@
+/* polices */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* regular font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+/* bold 600 font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap');
+/* light 300 font-family: 'Raleway', sans-serif; */
+
+.body_without_footer
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+/* header */
+
+.header_logo
+{
+    max-width: 150px;
+    height: 100%; /* pourquoi il s'étire sur la hauteur ? */
+    padding: 10px 0px 0px 0px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #000000;
+    padding: 21px 20px 50px 20px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+p
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+h1
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+h2
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 15px;
+}
+
+.header_nav3
+{
+    font-weight: 600;
+    color: #0065FC;
+}
+
+.header_nav3:hover
+{
+    font-weight: 600;
+    color: #1c77ff;
+}
+
+.header_nav1
+{
+    border-top: 3px solid #0065FC; /* comment appliquer la bordure à l'intérieure pour qu'elle soit visible ? */
+    color: #0065FC;
+}
+
+.header_nav1:hover 
+{
+    color: #0065FC;
+}
+
+.header_nav2:hover
+{
+    color: #0065FC;
+}
+
+/* Premier bloc pour moteur de recherche */
+.bloc1
+{
+    margin-top: 20px;
+}
+
+h1 + p
+{
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+form
+{
+    max-width: 400px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.form
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form2
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 0px 0px 0px;
+}
+
+input
+{
+    border: 1px solid #F2F2F2;
+    margin-left: 0px;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 8px 10px 10px 0px;
+    outline: none;
+}
+
+input:focus
+{
+    border-left: 1px solid #0065FC;
+}
+
+
+button
+{
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 8px 10px 10px 10px;
+}
+
+button:hover
+{
+    background-color: #1c77ff;
+}
+
+.bloc1 i
+{
+    background-color: #f2f2f2;
+    padding: 11px 10px 13px 10px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+}
+
+
+/* Deuxième bloc pour les filtres de recerche */
+.bloc2
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.filtre0
+{
+    padding: 1px 12px 1px 0px;
+    font-weight: 600;
+    margin: 0px 15px 0px 0px;
+}
+
+.filtre
+{
+    margin: 0px 15px 0px 0px;
+    background-color: #FFFFFF;
+    border: 2px solid #F2F2F2;
+    border-radius: 35px;
+    display: flex;
+    align-content: center;
+}
+
+.button_filter
+{
+    padding: 15px 15px 15px 10px;
+    margin: 0px;
+}
+
+.filtre:hover
+{
+    background-color: #F2F2F2;
+    font-size: 1.02em;
+
+}
+
+.filtre2
+{
+    display: flex;
+    align-content: center;
+    padding-left: 0px;
+}
+
+.bloc2 i
+{
+    background-color: #DEEBFF;
+    padding: 15px;
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+    margin-left: -2px;
+    margin-right: 5px;
+    color: #0065FC;
+}
+
+.bloc2 a, .bloc3 a, .bloc4 a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.pluscinqcent
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.pluscinqcent i
+{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #DEEBFF;
+    border-radius: 50%;
+    color: #0065FC;
+    margin-right: 10px;
+    font-size: 0.7em;
+}
+
+.pluscinqcent p
+{
+    margin: 7px;
+}
+
+/* MAIN hébergements et les plus populaires */
+.bloc3
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 30px;
+}
+
+h3
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 1em;
+    color: #000000;
+}
+
+.text_img_heb0
+{
+    font-family: 'Raleway', sans-serif;;
+}
+
+.bloc3_1
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    flex: 2;
+}
+
+.bloc3_2
+{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    flex: 1.5;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bloc3_2_1
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc3_2_1 i
+{
+    color: #000000;
+    margin-top: 20px; /* j'ai l'impression de bricoler avec des margin top. un align content center me semblait plus judicieux mais ça ne fonctionne pas */
+    margin-right: 1em;
+}
+
+.bloc3_1_2
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.min_heb
+{
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+    width: 220px;
+}
+
+.min_heb:hover
+{
+
+}
+
+.img_heb
+{
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+    vertical-align: bottom; /* comment avoir l'image centrée verticalement ? */
+}
+
+.text_img_heb0
+{
+    position:  absolute;
+    bottom: 0px;
+    width: 98%;
+    padding: 2px 0px 0px 10px;
+    background-color: #FFFFFF;
+}
+
+h4
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+    color: #000000;
+}
+
+h5
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7em;
+    font-weight: lighter;
+    padding: 2px 0px 5px 0px;
+    margin: 0px;
+    color: #000000;
+}
+
+.rating
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rating i
+{
+    color: #0065FC;
+}
+
+.rating_no i
+{
+    color: #F2F2F2;
+}
+
+.see_more
+{
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.see_more a
+{
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+
+.see_more a:visited
+{
+    text-decoration: none; /* comment enlever le changement de couleur pour un lien visité ? */
+}
+
+.see_more a:hover
+{
+    text-decoration: underline;
+}
+
+
+.heb_pop
+{
+    display: flex;
+    margin: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+} 
+
+.img_heb2
+{
+    width: 9em;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
+    height: 100%;
+    max-height: 130px;
+}
+
+.left_img_pop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px 0px 0px 1em;
+    background-color: #FFFFFF;
+    width: 98%;
+}
+
+.heb_pop .rating
+{
+    padding-bottom: 5px;
+}
+
+
+/* Activité à Marseille */
+.bloc4
+{
+    margin-top: 30px;
+}
+
+.bloc4_1
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bloc4_1_col1
+{
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.bloc4_1_col2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.bloc4_1_col2_1
+{
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.bloc4_1_col2_2
+{
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.img_bloc4
+{
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    width: 20em;
+    height: 30em;
+}
+
+.text_bloc4
+{
+    position: absolute;
+    bottom: 0px;
+    background-color: #ffffff;
+    padding: 1em 1em 1em 1em;
+    width: 92%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img_bloc4_2_1
+{
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    width: 20em;
+    height: 17em;
+}
+
+.img_bloc4_2_2
+{
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    width: 20em;
+    height: 10em;
+}
+
+.img_bloc4_2_3
+{
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    width: 20em;
+    height: 13em;
+}
+
+
+/* footer */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 40px 0px 20px 0px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.footer1, .footer2, .footer3
+{
+    padding: 1em 5em 1em 10em;
+}
+
+footer h3
+{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 0px;
+}
+
+footer a
+{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1280px)
+{
+    .bloc3_2
+    {
+         margin-left: 0px;
+    }
+
+    .bloc3_1
+    {
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .img_bloc4
+    {
+        object-fit: cover;
+        border-radius: 10px 10px 10px 10px;
+        width: 40em;
+        height: 20em;
+    }
+}
