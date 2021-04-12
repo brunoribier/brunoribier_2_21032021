@@ -79,7 +79,7 @@ h2
 
 .header_nav1
 {
-    border-top: 3px solid #0065FC; /* comment appliquer la bordure à l'intérieure pour qu'elle soit visible ? */
+    border-top: 2px solid #0065FC; /* comment appliquer la bordure à l'intérieure pour qu'elle soit visible ? */
     color: #0065FC;
 }
 
@@ -116,7 +116,7 @@ form
 .form
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .form2
@@ -128,16 +128,16 @@ form
 input
 {
     border: 1px solid #F2F2F2;
-    margin-left: 0px;
+    margin: 0px;
     font-size: 1.2em;
     width: 100%;
-    padding: 8px 10px 10px 0px;
+    padding: 8px 10px 8px 10px;
     outline: none;
 }
 
 input:focus
 {
-    border-left: 1px solid #0065FC;
+    border-left: 2px solid rgba(0, 101, 252, 0.5);
 }
 
 
@@ -185,9 +185,6 @@ button:hover
 .filtre
 {
     margin: 0px 15px 0px 0px;
-    background-color: #FFFFFF;
-    border: 2px solid #F2F2F2;
-    border-radius: 35px;
     display: flex;
     align-content: center;
 }
@@ -198,7 +195,7 @@ button:hover
     margin: 0px;
 }
 
-.filtre:hover
+.filtre2:hover
 {
     background-color: #F2F2F2;
     font-size: 1.02em;
@@ -210,6 +207,9 @@ button:hover
     display: flex;
     align-content: center;
     padding-left: 0px;
+    background-color: #FFFFFF;
+    border: 2px solid #f2f2f2;
+    border-radius: 35px;
 }
 
 .bloc2 i
@@ -240,12 +240,13 @@ button:hover
 .pluscinqcent i
 {
     background-color: #FFFFFF;
-    padding: 10px;
+    padding: 5px 8px;
     border: 1px solid #DEEBFF;
     border-radius: 50%;
     color: #0065FC;
     margin-right: 10px;
     font-size: 0.7em;
+    margin-top: 5px;
 }
 
 .pluscinqcent p
@@ -288,7 +289,7 @@ h3
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
-    flex: 1.5;
+    flex: 1;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -322,7 +323,16 @@ h3
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
     border: 5px solid #FFFFFF;
     border-radius: 10px;
-    width: 220px;
+}
+
+.min_heb:hover, .heb_pop:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.bloc3_1_2 a
+{
+    flex-basis: 33.33%;
 }
 
 .min_heb:hover
@@ -344,8 +354,9 @@ h3
     position:  absolute;
     bottom: 0px;
     width: 98%;
-    padding: 2px 0px 0px 10px;
+    padding: 2px 0px 0px 2%;
     background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 
 h4
@@ -454,14 +465,15 @@ h5
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-basis: auto;
 }
 
 .bloc4_1_col1
 {
     position: relative;
     border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+    margin: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .bloc4_1_col2
@@ -469,7 +481,7 @@ h5
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
+    margin: 5px;
 }
 
 .bloc4_1_col2_1
@@ -486,6 +498,11 @@ h5
     border-radius: 10px 10px 10px 10px;
 }
 
+.bloc4_1_col1:hover, .bloc4_1_col2_1:hover, .bloc4_1_col2_2:hover
+{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+}
+
 .img_bloc4
 {
     object-fit: cover;
@@ -499,9 +516,10 @@ h5
     position: absolute;
     bottom: 0px;
     background-color: #ffffff;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 6% 1em 2%;
     width: 92%;
     border-radius: 0px 0px 10px 10px;
+    border: 1px solid #FFFFFF;
 }
 
 .img_bloc4_2_1
@@ -509,7 +527,7 @@ h5
     object-fit: cover;
     border-radius: 10px 10px 10px 10px;
     width: 20em;
-    height: 17em;
+    height: 16em;
 }
 
 .img_bloc4_2_2
