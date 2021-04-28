@@ -71,13 +71,18 @@ h2
     margin-left: 15px;
 }
 
-.header_nav3
+.menu
+{
+    display: flex;
+}
+
+.header_signin
 {
     font-weight: 600;
     color: #0065FC;
 }
 
-.header_nav3:hover
+.header_signin:hover
 {
     font-weight: 600;
     color: #1c77ff;
@@ -159,12 +164,17 @@ button
     padding: 8px 10px 10px 10px;
 }
 
+.button_mobile
+{
+    display: none;
+}
+
 button:hover
 {
     background-color: #1c77ff;
 }
 
-.bloc1 i
+.form1 i
 {
     background-color: #f2f2f2;
     padding: 11px 10px 13px 10px;
@@ -711,6 +721,11 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         border-radius: 0px;
     }
 
+    .bloc3
+    {
+        flex-direction: column-reverse;
+    }
+
     .body_without_footer
     {
         padding-left: 0px;
@@ -722,8 +737,6 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         padding-left: 1em;
         padding-right: 1em;
     }
-
-
 
     .bloc3_1_2
     {
@@ -745,11 +758,6 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         flex-direction: column;
     }
 
-    .img_heb
-    {
-        min-width: 320px;
-    }
-
     .header_logo
     {
         margin-left: 1em;
@@ -757,30 +765,37 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
 
     nav
     {
-        flex-wrap: wrap; 
+        flex-direction: column; 
     }
 
-    .nav3
+    .signin
     {
-        order: 1;
+        order: -3;
     }
 
-    .nav1
+    .menu
     {
-        order: 3;
         margin-top: 30px;
     }
 
-    .nav2
+    .button_desktop
     {
-        order: 4;
+        display: none;
     }
-}
 
-@media screen and (max-width: 500)/* bascule en mode full mobile */
-{
-    .img_heb
+    .button_mobile
     {
-        min-width: auto;
+        display: flex;
+    }
+
+    .button_mobile i
+    {
+        background-color: #0065FC;
+        color: #FFFFFF;
+    }
+
+    .button_mobile i:hover
+    {
+        background-color: #1c77ff;
     }
 }

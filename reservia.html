@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="FR">
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -28,11 +28,17 @@
 <body>
 <div class="body_without_footer">
 	<header>
-		<img src="images/logo/Reservia.svg" class="header_logo">
+		<img src="images/logo/Reservia.svg" class="header_logo" alt="logo Reservia">
 		<nav>
-				<div class="nav1"><p><a href="#" class="header_nav1">Hébergement</a></p></div>
-				<div class="nav2"><p><a href="#" class="header_nav2">Activités</a></p></div>
-				<div class="nav3"><p><a href="#" class="header_nav3">S'inscrire</a></p></div>
+				<div class="menu">
+					<div class="nav1">
+						<p><a href="#" class="header_nav1">Hébergement</a></p>
+					</div>
+					<div class="nav2">
+						<p><a href="#" class="header_nav2">Activités</a></p>
+					</div>
+				</div>
+				<div class="signin"><p><a href="#" class="header_signin">S'inscrire</a></p></div>
 		</nav>
 	</header>
 
@@ -49,7 +55,12 @@
 					<input type="text" name="city" placeholder="Marseille, France"/>
 				</div>
 				<div class="form3">
-					<button>Rechercher</button>
+					<button>
+						<div class="button_desktop">Rechercher
+						</div>
+						<div class="button_mobile"><i class="fas fa-search"></i>
+						</div>
+					</button>
 				</div>
 			</div>
 		</form>
