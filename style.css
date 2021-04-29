@@ -11,8 +11,7 @@
 
 body
 {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .body_without_footer
@@ -23,6 +22,12 @@ body
 
 
 /* header */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .header_logo
 {
@@ -31,23 +36,22 @@ body
     padding: 10px 0px 0px 0px;
 }
 
-header
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 nav a
 {
     text-decoration: none;
     color: #000000;
-    padding: 21px 20px 50px 20px;
+}
+
+.nav1, .nav2, .signin
+{
+    padding: 15px 20px 20px 20px;
 }
 
 nav
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex: 1 1;
 }
 
 p
@@ -80,6 +84,7 @@ h2
 {
     font-weight: 600;
     color: #0065FC;
+    text-decoration: none;
 }
 
 .header_signin:hover
@@ -88,13 +93,12 @@ h2
     color: #1c77ff;
 }
 
-.header_nav1
+.nav1
 {
-    border-top: 2px solid #0065FC; /* comment appliquer la bordure à l'intérieure pour qu'elle soit visible ? */
-    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
-.header_nav1:hover 
+.nav1 a
 {
     color: #0065FC;
 }
@@ -765,17 +769,46 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
 
     nav
     {
-        flex-direction: column; 
+        order: 2;
+        flex-basis: 100%;
+        justify-content: space-around;
     }
+
+    .nav1, .nav2
+    {
+        width: 50%;
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .nav1
+    {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .nav2
+    {
+        border-bottom: 2px solid #f2f2f2;
+    }
+
 
     .signin
     {
-        order: -3;
+        order: 1;
+        text-align: right;
+        margin-right: 20px;
     }
 
     .menu
     {
         margin-top: 30px;
+    }
+
+    button
+    {
+        border-radius: 10px;
+        padding: 10px 10px 11px 10px;
     }
 
     .button_desktop
@@ -794,7 +827,7 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         color: #FFFFFF;
     }
 
-    .button_mobile i:hover
+    button:hover i
     {
         background-color: #1c77ff;
     }
