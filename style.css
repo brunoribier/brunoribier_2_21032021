@@ -757,6 +757,11 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         height: 20em;
     }
 
+    .img_heb2
+    {
+        min-width: 210px;
+    }
+
     .bloc3_2_2
     {
         flex-direction: column;
