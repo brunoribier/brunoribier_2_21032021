@@ -842,4 +842,9 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
     {
         background-color: #1c77ff;
     }
+
+    .footer1, .footer2, .footer3
+    {
+        padding-left: 2em;
+    }
 }
