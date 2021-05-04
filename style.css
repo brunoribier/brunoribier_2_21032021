@@ -765,6 +765,7 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
 
     .img_heb2
     {
+        min-width: 150px;
         width: 150px;
     }
 
