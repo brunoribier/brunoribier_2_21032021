@@ -700,6 +700,11 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
         margin: 10px 15px 5px 15px;
     }
 
+    .bloc4 a, .bloc4_1_col2
+    {
+        width: 100%
+    }
+
     footer
     {
         flex-direction: column;
@@ -845,11 +850,6 @@ Les très petits écrans (< 768 px : pour les écrans dont la largeur est compri
     button:hover i
     {
         background-color: #1c77ff;
-    }
-
-    .bloc4 a, .bloc4_1_col2
-    {
-        width: 100%
     }
 
     .footer1, .footer2, .footer3
